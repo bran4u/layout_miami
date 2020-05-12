@@ -106,9 +106,8 @@ button {
     position: relative;
     top: 56px; }
   .header__phone-mobile {
+    background: no-repeat center url(../images/phone.svg);
     display: none; }
-    .header__phone-mobile::after {
-      content: url(../images/Phone.svg); }
   .header__mobile-btn {
     background: no-repeat center url(../images/burger.svg); }
   .header__nav-mobile, .header__mobile-btn, .header__phone-mobile {
