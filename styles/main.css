@@ -112,6 +112,16 @@ button {
     background: no-repeat center url(../images/burger.svg); }
   .header__nav-mobile, .header__mobile-btn, .header__phone-mobile {
     display: none; }
+  .header-link {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s; }
+    .header-link-link:hover {
+      color: #d5c5aa; }
+  .header__text {
+    border-bottom: none; }
   @media (max-width: 1100px) {
     .header__menu, .header__top {
       padding: 0;
@@ -131,15 +141,6 @@ button {
       display: none; } }
   .header__nav-mobile {
     display: block; }
-  .header__link {
-    color: white;
-    text-decoration: none;
-    border-bottom: 1px dashed;
-    -webkit-transition: color 0.3s;
-    transition: color 0.3s;
-    text-transform: uppercase; }
-    .header__link__link:hover {
-      color: #d5c5aa; }
 
 .logo {
   width: 115px;
@@ -362,13 +363,16 @@ button {
   .photos_wide_right .photos__img:last-child {
     width: calc(67% - 10px); }
   @media screen and (max-width: 1100px) {
-    .photos {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-      .photos__img {
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%; } }
+    .photos__img {
+      min-width: 131px;
+      height: 131px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      -o-object-position: center;
+         object-position: center;
+      border-radius: 8px; }
+      .photos__img:last-child {
+        margin-left: 20px; } }
 
 .gallery__caption {
   margin: 12px 0 35px; }
@@ -388,9 +392,10 @@ button {
   transition: background-color 0.3s;
   padding: 19px 62px;
   border: 2px solid #0075ff;
-  border-radius: 8px; }
+  border-radius: 8px;
+  outline: none; }
   .button:hover {
-    background-color: #f2f2f2;
+    background-color: white;
     color: #0075ff; }
   @media screen and (max-width: 1100px) {
     .button {
